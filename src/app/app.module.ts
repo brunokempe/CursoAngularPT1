@@ -5,20 +5,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NomeComponenteComponent } from './Pasta/nome-componente/nome-componente.component';
 import { HomeComponent } from './home/home.component';
-import { ListaProdutoComponent } from './lista-produto/lista-produto.component';
+import { ServicoService } from './servico.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     NomeComponenteComponent,
-    HomeComponent,
-    ListaProdutoComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    ServicoService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
